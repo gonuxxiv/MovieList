@@ -60,19 +60,25 @@ function addMovie() {
 
     var keyFound = keyExists(userTypedText, myMovies);
 
-    if(!keyFound) {
-        // Step 2: Create an empty <li></li>
-        var li = document.createElement("li"); // <li></li>
+    if (userTypedText == "") {
+        alert("You must type a name of the movie!");
+    }
 
-        // Step 3: Prepare the text we will insert INTO that li ^...example: Harry Potter
-        var textToInsert = document.createTextNode(userTypedText);
+    if (userTypedText.length > 0) {
+        if(!keyFound) {
+            // Step 2: Create an empty <li></li>
+            var li = document.createElement("li"); // <li></li>
 
-        // Step 4: Insert text into li
-        // <li>Harry Potter </li>
-        li.appendChild(textToInsert);
+            // Step 3: Prepare the text we will insert INTO that li ^...example: Harry Potter
+            var textToInsert = document.createTextNode(userTypedText);
 
-        // Step 5: Insert the <li>Harry Potter</li> INTO the <ul>
-        myMovieList.appendChild(li);
+            // Step 4: Insert text into li
+            // <li>Harry Potter </li>
+            li.appendChild(textToInsert);
+
+            // Step 5: Insert the <li>Harry Potter</li> INTO the <ul>
+            myMovieList.appendChild(li);
+        }
     }
 
     // Insert movie into Object
