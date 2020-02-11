@@ -1,3 +1,5 @@
+/* This is a css documentation file */
+
 .flex {
   display: block;
   justify-content: space-between;
@@ -12,7 +14,7 @@ li:hover {
   cursor: pointer;
 }
 
-#ul {
+ul {
   list-style-type: none;
 }
 li {
