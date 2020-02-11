@@ -91,3 +91,14 @@ function addMovie() {
     // **3 Add to myMovies Object: watched zero times
     updateMovieHistory(userTypedText);
 }
+
+// Below targets the element from the list and remove it
+var listMovie = document.getElementsByClassName("list").value;
+var x = 0;
+var lis = document.querySelectorAll('li');  
+var ul = document.querySelector('ul');
+ul.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    this.removeChild(ev.target);
+  }
+});
