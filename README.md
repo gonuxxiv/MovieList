@@ -10,6 +10,7 @@ Q4:
                             return `Hello, my name is ${name}.`
                          });
                          console.log(intro);
+                         
     Explanation - The map in the example code above call each element in the array 
                   and inserted into the sentence, which gets returned to the variable
                   'intro'.
