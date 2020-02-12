@@ -28,4 +28,4 @@ Q4:
                   called by the map method and the changes get stored into the new array. 
     
     Lastly, transformation function is sometimes referred to as a callback function,
-    because it takes each element from the array and makes a new array that contains the elements which have been transformed from the original elements. 
+    because it takes each element from the array and makes a new array that contains the elements which have been transformed from the original elements.
